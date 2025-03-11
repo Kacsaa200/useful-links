@@ -3,10 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://mailcommerce.hu/pages/mailcommerce-useful-links-open-in-browser">
     <title>Redirecting...</title>
+
+    <!-- JavaScript to detect Instagram in-app browser and redirect -->
+    <script type="text/javascript">
+      // Function to detect Instagram's in-app browser
+      function isInstagram() {
+        return (navigator.userAgent.indexOf("Instagram") !== -1);
+      }
+
+      // If user is on Instagram, force redirect to external browser
+      if (isInstagram()) {
+        window.location.href = "https://mailcommerce.hu/pages/mailcommerce-useful-links-open-in-browser";
+      } else {
+        // If not in Instagram, redirect normally
+        window.location.href = "https://mailcommerce.hu/pages/mailcommerce-useful-links-open-in-browser";
+      }
+    </script>
   </head>
   <body>
-    <p>If you are not redirected, click <a href="https://mailcommerce.hu/pages/mailcommerce-useful-links-open-in-browser">here</a>.</p>
+    <p>If you are not redirected, please <a href="https://mailcommerce.hu/pages/mailcommerce-useful-links-open-in-browser">click here</a>.</p>
   </body>
 </html>
